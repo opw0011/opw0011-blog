@@ -10,6 +10,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Paper from "@material-ui/core/Paper";
 import PropTypes from "prop-types";
 import React from "react";
+import Link from "gatsby-link";
 
 const styles = theme => ({
   topMenu: {
@@ -88,7 +89,7 @@ class TopMenu extends React.Component {
                       const { fields, frontmatter } = page.node;
 
                       return (
-                        <a key={fields.slug} href={fields.slug} style={{ display: "block" }}>
+                        <Link key={fields.slug} to={fields.slug} style={{ display: "block" }}>
                           <MenuItem
                             onClick={e => {
                               this.props.pageLinkOnClick(e);
@@ -97,10 +98,10 @@ class TopMenu extends React.Component {
                           >
                             {frontmatter.menuTitle ? frontmatter.menuTitle : frontmatter.title}
                           </MenuItem>
-                        </a>
+                        </Link>
                       );
                     })}
-                    <a href="/contact/" style={{ display: "block" }}>
+                    <Link to="/contact/" style={{ display: "block" }}>
                       <MenuItem
                         onClick={e => {
                           this.props.pageLinkOnClick(e);
@@ -109,7 +110,7 @@ class TopMenu extends React.Component {
                       >
                         Contact
                       </MenuItem>
-                    </a>
+                    </Link>
                   </MenuList>
                 </Paper>
               </Grow>

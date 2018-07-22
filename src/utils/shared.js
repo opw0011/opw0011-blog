@@ -1,5 +1,5 @@
 import { forceCheck } from "react-lazyload";
-import { navigateTo } from 'gatsby-link';
+import { push, withPrefix } from "gatsby-link";
 
 export function featureNavigator(e) {
   e && e.preventDefault();
@@ -18,9 +18,8 @@ export function featureNavigator(e) {
           // to index page ('/'), you have to also uncomment import { navigateTo }...
 
           // setTimeout(() => {
-            navigateTo("/");
+          push(withPrefix("/"));
           // }, 1000);
-
         });
       }, 300);
     } else {

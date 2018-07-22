@@ -7,7 +7,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "develop-host": "gatsby develop --host 192.168.0.112",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "gh-pages": "gh-pages -d public",
     "serve": "gatsby serve",

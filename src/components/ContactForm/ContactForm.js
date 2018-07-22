@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
 import Button from "@material-ui/core/Button";
-import { navigateTo } from "gatsby-link";
+import { push, withPrefix } from "gatsby-link";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 
 function encode(data) {
@@ -66,7 +66,7 @@ class ContactForm extends React.Component {
     })
       .then(() => {
         console.log("Form submission success");
-        navigateTo("/success");
+        push(withPrefix("/success"));
       })
       .catch(error => {
         console.error("Form submission error:", error);
