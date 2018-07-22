@@ -5,7 +5,7 @@ module.exports = {
   shortSiteTitle: "PersonalBlog GatsbyJS Starter", // <title> ending for posts and pages
   siteDescription: "PersonalBlog is a GatsbyJS starter.",
   siteUrl: "https://gatsby-starter-personal-blog.greglobinski.com",
-  pathPrefix: "",
+  pathPrefix: "/opw0011-blog",
   siteImage: "preview.jpg",
   siteLanguage: "en",
   // author
