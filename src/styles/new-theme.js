@@ -29,7 +29,7 @@ const theme = createMuiTheme({
   info: {
     colors: {
       text: colors.gray,
-      background: colors.background,
+      background: colors.infoBackground,
       socialIcons: colors.lightGray,
       socialIconsHover: colors.accent,
       menuLink: colors.gray,
@@ -133,9 +133,9 @@ const theme = createMuiTheme({
   },
   bars: {
     colors: {
-      background: colors.barBackground,
-      icon: colors.bright,
-      text: colors.bright
+      background: colors.background,
+      icon: colors.accent,
+      text: colors.gray
     },
     sizes: {
       actionsBar: 60,

@@ -1,6 +1,7 @@
 module.exports = {
   background: "#ffffff",
-  barBackground: "#607d8b",
+  barBackground: "#dedede",
+  infoBackground: "#efefef",
   white: "#ffffff",
   accent: "#709425",
   bright: "#ffffff",

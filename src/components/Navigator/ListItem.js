@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
 import LazyLoad from "react-lazyload";
+import { withPrefix } from "gatsby-link";
 
 const styles = theme => ({
   listItem: {
@@ -154,10 +155,17 @@ class ListItem extends React.Component {
               <picture>
                 <source
                   type="image/webp"
-                  srcSet={post.node.frontmatter.cover.children[0].resolutions.srcSetWebp}
+                  srcSet={withPrefix(
+                    post.node.frontmatter.cover.children[0].resolutions.srcSetWebp
+                  )}
                 />
-                <source srcSet={post.node.frontmatter.cover.children[0].resolutions.srcSet} />
-                <img src={post.node.frontmatter.cover.children[0].resolutions.src} alt="" />
+                <source
+                  srcSet={withPrefix(post.node.frontmatter.cover.children[0].resolutions.srcSet)}
+                />
+                <img
+                  src={withPrefix(post.node.frontmatter.cover.children[0].resolutions.src)}
+                  alt=""
+                />
               </picture>
             </LazyLoad>
             {/*<Img sizes={post.node.frontmatter.cover.children[0].sizes} />*/}
