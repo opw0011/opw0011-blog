@@ -64,7 +64,7 @@ const styles = theme => ({
         right: "auto",
         width: 0,
         height: "auto",
-        borderLeft: `1px solid ${theme.base.colors.lines}`
+        // borderLeft: `1px solid ${theme.base.colors.lines}`
       }
     }
   },
