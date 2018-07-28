@@ -3,18 +3,8 @@ title: My Projects
 menuTitle: My Projects
 ---
 
-[Personal**Blog**](https://github.com/greglobinski/gatsby-starter-personal-blog) is not my first [GatsbyJS](https://www.gatsbyjs.org/) starter.
+### Egg Saver – A Pokemon Theme SVG Platform Game
 
-![SimpleLanding](./gatsby-starter-simple-landing.png)
+<img src="https://opw0011.github.io/images/thumbs/svg-pkm.gif" alt="egg-saver" style="max-width:600px;"/>
 
-### SimpleLanding
-
-As the name says, it is a landing page starter.
-[Demo](https://gatsby-starter-simple-landing.greglobinski.com/) | [Github repo](https://github.com/greglobinski/gatsby-starter-simple-landing)
-
-![StyledBlog](./gatsby-styled-blog-starter.jpg)
-
-### StyledBlog
-
-That was my first Gatsby starter. It is a forefather of the starter you are looking at now.
-[Github repo](https://github.com/greglobinski/gatsby-styled-blog-starter)
+[Demo](https://opw0011.github.io/SVG_Platform_Game/game.html) | [Github repo](https://github.com/opw0011/SVG_Platform_Game)
