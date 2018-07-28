@@ -101,7 +101,7 @@ class TopMenu extends React.Component {
                         </Link>
                       );
                     })}
-                    <Link to="/contact/" style={{ display: "block" }}>
+                    {/* <Link to="/contact/" style={{ display: "block" }}>
                       <MenuItem
                         onClick={e => {
                           this.props.pageLinkOnClick(e);
@@ -110,7 +110,7 @@ class TopMenu extends React.Component {
                       >
                         Contact
                       </MenuItem>
-                    </Link>
+                    </Link> */}
                   </MenuList>
                 </Paper>
               </Grow>
