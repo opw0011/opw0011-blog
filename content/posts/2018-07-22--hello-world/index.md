@@ -1,9 +1,11 @@
 ---
 title: Hello World
 subTitle: This is the first post of my blog
-cover: photo-1463852247062-1bbca38f7805-cover.jpg
+cover: hello-world.png
 category: "casual"
 ---
+
+![hello-world.png](./hello-world.png)
 
 Hey, this site is built by [Gatsby](https://github.com/gatsbyjs/gatsby), an amazing React static site generator. It support large extends of customization using React. My previous personal website used to be built with Hugo (a Go static site generator). Although the build time is extremly fast, it don't have a built-in web framework so that you need to spend tons of efforts on customization if you are not using the pre-defined themes.   
 
