@@ -1,5 +1,0 @@
----
-title: author
----
-
-**Benny O**
