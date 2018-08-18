@@ -7,8 +7,10 @@
   "scripts": {
     "develop": "gatsby develop",
     "develop-host": "gatsby develop --host 192.168.0.112",
-    "build": "gatsby build --prefix-paths",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "build": "gatsby build",
+    "deploy": "npm run build && npm run gh-pages",
+    "build-prefix": "gatsby build --prefix-paths",
+    "deploy-prefix": "gatsby build --prefix-paths && gh-pages -d public",
     "gh-pages": "gh-pages -b master -d public -r https://github.com/opw0011/opw0011.github.io.git",
     "serve": "gatsby serve",
     "format-output": "prettier src/**/*.{js,jsx}",

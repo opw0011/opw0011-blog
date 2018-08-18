@@ -44,7 +44,7 @@ module.exports = {
       appId: process.env.FB_APP_ID ? process.env.FB_APP_ID : ""
     }
   },
-  pathPrefix: config.pathPrefix,
+  // pathPrefix: config.pathPrefix,
   plugins: [
     `gatsby-plugin-react-next`,
     {
