@@ -1,5 +1,6 @@
 require("dotenv").config();
 const config = require("./content/meta/config");
+const transformer = require("./src/utils/algolia");
 
 const query = `{
   allMarkdownRemark(filter: { id: { regex: "//posts|pages//" } }) {
@@ -24,7 +25,10 @@ const query = `{
 const queries = [
   {
     query,
-    transformer: ({ data }) => data.allMarkdownRemark.edges.map(({ node }) => node)
+    // transformer: ({ data }) => data.allMarkdownRemark.edges.map(({ node }) => node)
+    transformer: ({ data }) => {
+      return data.allMarkdownRemark.edges.reduce(transformer, []);
+    }
   }
 ];
 
