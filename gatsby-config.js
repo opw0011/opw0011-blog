@@ -38,7 +38,8 @@ module.exports = {
     description: config.siteDescription,
     siteUrl: config.siteUrl,
     algolia: {
-      appId: process.env.ALGOLIA_APP_ID ? process.env.ALGOLIA_APP_ID : "",
+      // appId: process.env.ALGOLIA_APP_ID ? process.env.ALGOLIA_APP_ID : "",
+      appId: "",
       searchOnlyApiKey: process.env.ALGOLIA_SEARCH_ONLY_API_KEY
         ? process.env.ALGOLIA_SEARCH_ONLY_API_KEY
         : "",
