@@ -23,10 +23,10 @@ module.exports = {
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
   // contact
-  contactEmail: "john@doe.com",
+  contactEmail: "opw0011@gmail.com",
   // social
   authorSocialLinks: [
     { name: "github", url: "https://github.com/opw0011" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/benny-o-13b9a183" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/benny-o" }
   ]
 };
